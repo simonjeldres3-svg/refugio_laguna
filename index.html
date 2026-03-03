@@ -1,11 +1,89 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Refugio Laguna</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Refugio Laguna - Ayuda y Adopción</title>
+  <style>
+    body{font-family:system-ui,Arial;margin:0;background:#f6f6f6;color:#111}
+    header{padding:24px;background:#fff;border-bottom:1px solid #ddd}
+    main{max-width:980px;margin:0 auto;padding:18px}
+    .alert{background:#ffe8e8;border:1px solid #ffb3b3;padding:12px;border-radius:10px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:14px}
+    .card{background:#fff;border:1px solid #ddd;border-radius:14px;overflow:hidden}
+    .card img{width:100%;height:200px;object-fit:cover;background:#eee}
+    .card .p{padding:12px}
+    .btn{display:inline-block;padding:10px 12px;border-radius:10px;border:1px solid #111;text-decoration:none;color:#111}
+    .btn.primary{background:#111;color:#fff}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    footer{padding:18px;text-align:center;color:#555}
+    small{color:#555}
+  </style>
 </head>
 <body>
-  <h1>Refugio Laguna</h1>
-  <p>Web en construcción.</p>
+  <header>
+    <h1>Refugio Laguna</h1>
+    <p>Tenemos <b>9 animales</b>. Los recursos están en <b>nivel crítico</b>.</p>
+    <div class="row">
+      <a class="btn primary" href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noreferrer">WhatsApp</a>
+      <a class="btn" href="#donar">Donar</a>
+      <a class="btn" href="#adopcion">Adoptar</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="alert">
+      <b>URGENTE:</b> necesitamos alimento / arena / medicamentos / aportes para mantener a los 9.
+    </section>
+
+    <section id="adopcion">
+      <h2>En adopción</h2>
+      <p>Completa el formulario y te contactamos.</p>
+
+      <div class="grid">
+        <!-- DUPLICA ESTA TARJETA 9 VECES -->
+        <div class="card">
+          <img src="img/animal1.jpg" alt="Animal 1">
+          <div class="p">
+            <b>Nombre:</b> (cambiar)<br/>
+            <b>Edad:</b> (cambiar)<br/>
+            <b>Salud:</b> (cambiar)<br/>
+            <b>Carácter:</b> (cambiar)<br/><br/>
+            <a class="btn primary" href="FORM_URL" target="_blank" rel="noreferrer">Quiero adoptar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="donar">
+      <h2>Donar / Ayudar</h2>
+      <div class="card">
+        <div class="p">
+          <h3>Transferencia</h3>
+          <p>
+            Banco: ____<br/>
+            Nombre: ____<br/>
+            RUT: ____<br/>
+            Cuenta: ____<br/>
+            Tipo: ____<br/>
+          </p>
+
+          <h3>Insumos</h3>
+          <p>Alimento (perro/gato), arena sanitaria, antiparasitarios, remedios, mantas.</p>
+
+          <p><small>Envía comprobante por WhatsApp para registrar la ayuda.</small></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Redes</h2>
+      <p>Pega aquí tu Instagram/Facebook.</p>
+    </section>
+  </main>
+
+  <footer>
+    <small>© Refugio Laguna</small>
+  </footer>
 </body>
 </html>
